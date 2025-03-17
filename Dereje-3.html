@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dereje Shenkut - Academic Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Add emoji font support -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Dereje (ደረጀ) Shenkut</h1>
+        <h2>PhD Student, Carnegie Mellon University</h2>
+
+        <nav>
+            <ul style="font-size: 1.2em;">
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <!-- <li><a href="#contact">Contact</a></li> -->
+                <li><a href="#blueNileHub">NewsML(Afr)</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- About Section -->
+    <section id="about" class="s1">
+        <div class="main-container">
+            <div class="intro-wrapper">
+                <div class="left-column">
+                    <img id="profile-pic" src="images/photo_2023-05-08_16-27-53.jpg" alt="Dereje Shenkut">
+                    <div class="social-links">
+                        <a href="https://scholar.google.com/citations?user=y469IrkAAAAJ&hl=en" 
+                        target="_blank">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                        <a href="https://github.com/DerejeCShenkut" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://huggingface.co/scdrand23" target="_blank">
+                            <span class="hf-icon">🤗</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dereje-chinkil-shenkut/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/menelikIII23" target="_blank">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div id="preview">
+                    <p>
+                        I'm a PhD student at the Department of <a style="color: rgb(99, 99, 244);" 
+                        href="https://www.ece.cmu.edu/">Electrical and Computer Engineering</a> with 
+                        specialization on <b>Computer Vision</b>, <b>Signal Processing</b>, and <b>Machine 
+                            Learning</b> . I am fortunate to be advised by <a style="color: rgb(99, 99, 244);" href="https://www.ece.cmu.edu/directory/bios/bhagavatula-vijayakumar.html">Professor Vijayakumar Bhagavatula</a>. 
+                       </p>
+                    <!-- <ul>                         -->
+
+                        <!-- </li> -->
+                    <!-- </ul> -->
+
+                    <p>Before my PhD, I did my masters at <a href="https://www.africa.engin
+                        eering.cmu.edu/" style="color: rgb(99, 99, 244);">Carnegie Mellon 
+                        University Africa</a> with focus on Applied Machine Learning.</p>
+                    <p>I received my bachelor's degree in Electrical and Computer Engineering 
+                        from <a href="https://aau.edu.et/" style="color: rgb(99, 99, 244);">Addis 
+                            Ababa University (አዲስ አበባ ዩኒቨርሲቲ)</a>, in Ethiopia <span class="ethiopia-flag"
+                            >🇪🇹</span>, where I am originally from.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research">
+        <h2>Research Interests</h2>
+        <p style="margin: 5px;">My research focuses on improving learning-based 
+            autonomous driving (AD) perception methods to improve safety. Specifically, </p>
+        <!-- <p style="margin: 5px;">Key areas of focus:</p> -->
+        <ul style="margin: 0; padding-left: 5em; line-height: 1.5;">
+            <div style="display: flex; justify-content: space-between;">
+                <div>
+                    <li>Multi-modal (multi-sensor) Perception</li>
+                    <li>Vision-Language Models for AD Systems</li>
+                    
+                </div>
+                <div>
+                    <li>Multi-agent Cooperative Perception</li>
+                    <li>Pedestrian Safety via Improved AD Perception</li>
+                </div>
+
+
+            </div>
+        </ul>
+        <p style="margin-top: 10px;">My work explores the intersections of these areas 
+            to develop more robust and safer autonomous driving systems.</p>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications">
+        <h2>Publications</h2>
+        <div class="publications-grid">
+            <!-- FocalComm Publication -->
+            <div class="publication-card">
+                <div class="publication-header">
+                    <span class="pub-year">2025</span>
+                    <span class="pub-status">Under Submission</span>
+                </div>
+                <h3>FocalComm: Hard Instance Aware Multi-Agent Collaborative Perception</h3>
+                <div class="publication-content">
+                    <div class="pub-media">
+                        <img src="final_collaged.gif" alt="FocalComm Visualization" class="pub-image">
+                        <div class="media-overlay">
+                            <div class="overlay-links">
+                                <a href="#" class="media-link">View Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pub-details">
+                        <p class="pub-authors"><strong>Dereje Shenkut</strong>, Vijayakumar Bhagavatula</p>
+                        <div class="pub-abstract-container">
+                            <div class="pub-abstract">
+                                Multi-agent collaborative perception aims to improve safety for 
+                                vehicles and vulnerable road users like pedestrians, but existing 
+                                approaches underperform on small-sized objects that are critical 
+                                for safety. FocalComm addresses this by focusing on exchanging 
+                                information about challenging detection targets through learnable 
+                                progressive hard instance mining and a feature-level fusion technique 
+                                that prioritizes multi-stage hard instance query features. Our extensive 
+                                evaluation demonstrates that FocalComm outperforms state-of-the-art 
+                                methods on real V2X benchmarks, achieving significant gains in overall 
+                                mAP and substantial improvements in pedestrian detection across both 
+                                vehicle-centric and infrastructure-centric setups.
+                            </div>
+                        </div>
+                        <div class="pub-links">
+                            <a href="#" class="pub-button small-button abstract-btn">Abstract</a>
+                            <a href="#" class="pub-button small-button">PDF*</a>
+                            <a href="#" class="pub-button small-button">Webpage</a>
+                            <a href="#" class="pub-button small-button">arXiv</a>
+                            <a href="#" class="pub-button small-button">Code</a>
+                        </div>
+                        <div class="pub-brief-description">
+                            Improves multi-agent perception by focusing on hard instances and small objects. Achieves significant gains in pedestrian detection across V2X scenarios.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visual-linguistic Reasoning Publication -->
+            <div class="publication-card">
+                <div class="publication-header">
+                    <span class="pub-year">2025</span>
+                    <span class="pub-venue">ICRA 2025</span>
+                </div>
+                <h3>Visual-linguistic Reasoning for Pedestrian Trajectory Prediction</h3>
+                <div class="publication-content">
+                    <div class="pub-media">
+                        <img src="final_collaged.gif" alt="Visual-linguistic Reasoning" class="pub-image">
+                        <div class="media-overlay">
+                            <div class="overlay-links">
+                                <a href="#" class="media-link">View Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pub-details">
+                        <p class="pub-authors"><strong>Dereje Shenkut</strong>, Vijayakumar Bhagavatula</p>
+                        <div class="pub-abstract-container">
+                            <div class="pub-abstract">
+                                Accurate prediction of pedestrian trajectories is crucial for
+                                 autonomous vehicles, but the dynamic nature of urban environments 
+                                 and unpredictable pedestrian behavior present significant challenges 
+                                 that earlier RNN and LSTM methods couldn't fully address. This paper 
+                                 introduces a novel approach that uses a powerful pre-trained vision-language
+                                  model (VLM) to improve trajectory estimation by learning semantically useful
+                                   scene context and high-level reasoning features through fine-tuning 
+                                   on specific prompts with road scenes containing pedestrians. 
+                                   Through experiments with first-person datasets JAAD and PIE, we 
+                                   demonstrate that utilizing visual-linguistic semantics via our 
+                                   pretrained VLM approach outperforms previous methods in both 
+                                   deterministic and stochastic trajectory prediction setups.
+                            </div>
+                        </div>
+                        <div class="pub-links">
+                            <a href="#" class="pub-button small-button abstract-btn">Abstract</a>
+                            <a href="#" class="pub-button small-button">PDF*</a>
+                            <a href="#" class="pub-button small-button">Webpage*</a>
+                            <a href="#" class="pub-button small-button">arXiv</a>
+                            <a href="#" class="pub-button small-button">Code</a>
+                        </div>
+                        <div class="pub-brief-description">
+                            Improves pedestrian trajectory prediction by leveraging visual-linguistic semantics. Achieves superior performance in both deterministic and stochastic setups.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Latency and Bandwidth Publication -->
+            <div class="publication-card">
+                <div class="publication-header">
+                    <span class="pub-year">2024</span>
+                    <span class="pub-venue">ICCCN 2024</span>
+                </div>
+                <h3>Impact of Latency and Bandwidth Limitations on the Safety 
+                    Performance of Collaborative Perception</h3>
+                <div class="publication-content">
+                    <div class="pub-media">
+                        <img src="LatencyImapct2.PNG" alt="Latency and Bandwidth Study" class="pub-image">
+                        <div class="media-overlay">
+                            <div class="overlay-links">
+                                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10637568 class="media-link">View Paper</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pub-details">
+                        <p class="pub-authors"><strong>Dereje Shenkut</strong>, Vijayakumar Bhagavatula</p>
+                        <div class="pub-abstract-container">
+                            <div class="pub-abstract">
+                                Collaborative perception systems rely on V2V communication networks that are 
+                                subject to real-world constraints like latency and bandwidth limitations. 
+                                This study quantifies the impact of these network constraints on perception 
+                                performance and safety metrics. We propose adaptive communication strategies 
+                                that maintain critical safety performance even under severe network limitations, 
+                                providing practical guidelines for deploying collaborative perception in real-world 
+                                autonomous driving scenarios.
+                            </div>
+                        </div>
+                        <div class="pub-links">
+                            <a href="#" class="pub-button small-button abstract-btn">Abstract</a>
+                            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10637568" 
+                            class="pub-button small-button">PDF</a>
+                            <!-- <a href="#" class="pub-button small-button">Webpage</a>
+                            <a href="#" class="pub-button small-button">arXiv</a>
+                            <a href="#" class="pub-button small-button">Code</a> -->
+                        </div>
+                        <div class="pub-brief-description">
+                            Quantifies the impact of latency and bandwidth limitations on collaborative perception. Proposes adaptive communication strategies to maintain safety performance.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CVIPS Dataset Publication Card -->
+            <div class="publication-card">
+                <div class="publication-header">
+                    <span class="pub-year">2024</span>
+                    <span class="pub-venue">UTC-Safety21 2024</span>
+                </div>
+                <h3>Connected Vision for Improved Pedestrian Safety (CVIPS) </h3>
+                <div class="publication-content">
+                    <div class="pub-media">
+                        <img src="images/output_video_VVVI_4cam.gif" alt="Collaborative View" class="pub-
+                        image">
+                        <div class="media-overlay">
+                            <div class="overlay-links">
+                                <a href="https://drive.google.com/drive/folders/1gCCrIslzVkupyF0lj_1
+                                I9qXTB2_a4tjd?usp=drive_link" class="media-link" target="_blank">View D
+                                ataset</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pub-details">
+                        <p class="pub-authors">Vijayakumar Bhagavatula, Aswin Sankaranarayanan, <strong>
+                            Dereje Shenkut</strong></p>
+                        <div class="pub-abstract-container">
+                            <div class="pub-abstract">
+                                We present CVIPS, a comprehensive multi-view dataset designed to 
+                                improve pedestrian safety through collaborative perception. 
+                                The dataset features synchronized video from multiple viewpoints 
+                                in urban environments, with detailed annotations of pedestrian positions, 
+                                trajectories, and potential safety-critical scenarios. CVIPS enables the 
+                                development and evaluation of collaborative perception algorithms specifically focused on enhancing pedestrian safety in autonomous driving applications.
+                            </div>
+                        </div>
+                        <div class="pub-links">
+                            <a href="#" class="pub-button small-button abstract-btn">Abstract</a>
+                            <a href="#" class="pub-button small-button">PDF</a>
+                            <a href="https://drive.google.com/drive/folders/1gCCrIslzVkupyF0lj_1I9qXTB2
+                            _a4tjd?usp=drive_link" class="pub-button small-button" target="_blank">
+                            Dataset</a>
+                            <!-- <a href="#" class="pub-button small-button">arXiv</a> -->
+                            <a href="#" class="pub-button small-button">Code</a>
+                        </div>
+                        <div class="pub-brief-description">
+                            Presents CVIPS, a comprehensive multi-view dataset for pedestrian safety. Features synchronized video from multiple viewpoints and detailed annotations.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fundus GAN Publication -->
+            <div class="publication-card">
+                <div class="publication-header">
+                    <span class="pub-year">2022</span>
+                    <span class="pub-venue">EMBC 2022</span>
+                </div>
+                <h3>Fundus GAN - GAN-based Fundus Image Synthesis for Training Retinal Image 
+                    Classifiers</h3>
+                <div class="publication-content">
+                    <div class="pub-media">
+                        <img src="9871771-fig-1-source-small.gif" alt="Fundus GAN Architecture" 
+                        class="pub-image">
+                        <div class="media-overlay">
+                            <div class="overlay-links">
+                                <a href="#" class="media-link">View Paper</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pub-details">
+                        <p class="pub-authors"><strong>Dereje Shenkut</strong>, Vijayakumar Bhagavatula</p>
+                        <div class="pub-abstract-container">
+                            <div class="pub-abstract">
+                                We propose Fundus GAN, a GAN-based method for synthesizing realistic 
+                                fundus images to address the challenges of limited labeled data 
+                                and patient privacy concerns in retinal image analysis. Our two-step 
+                                approach first extracts vessel trees using a segmentation network, 
+                                then translates these to fundus images using unsupervised generative 
+                                attention networks. Experiments show Fundus GAN outperforms state-of-the-art
+                                 methods and produces high-quality synthetic images that can effectively 
+                                 train retinal disease classifiers while preserving patient privacy.
+                            </div>
+                        </div>
+                        <div class="pub-links">
+                            <a href="#" class="pub-button small-button abstract-btn">Abstract</a>
+                            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9871771" 
+                            class="pub-button small-button">PDF</a>
+                            <!-- <a href="#" class="pub-button small-button">Webpage</a> -->
+                            <!-- <a href="#" class="pub-button small-button">arXiv</a> -->
+                            <a href="#" class="pub-button small-button">Code</a>
+                        </div>
+                        <div class="pub-brief-description">
+                            Proposes Fundus GAN, a GAN-based method for synthesizing realistic fundus images. Achieves high-quality synthetic images that can effectively train retinal disease classifiers while preserving patient privacy.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Section -->
+    <section id="teaching">
+        <h2>Teaching Assistantship</h2>
+        <ul>
+            <li>TA for <a href="https://courses.ece.cmu.edu/18202" target="_blank">Mathematical Foundation
+                 for Electrical Engineering</a>, Fall 2024</li>
+            <li>TA for <a href="https://www.africa.engineering.cmu.edu/academics/courses/04-652.html"
+                target="_blank">AI System Design</a>, Spring 2022</li>
+            <li>TA for <a href="https://courses.ece.cmu.edu/18461" target="_blank">Introduction to 
+                Machine Learning for Engineers</a>, Fall 2021</li>            
+            <li>Assitant Lecturer at <a href="http://www.aau.edu.et/" target="_blank">Addis Ababa 
+                University</a>, 2019-20</li>
+            <li>Volunter TA at <a href="https://www.addiscoder.com/" target="_blank">Addis Coder 
+                Ethiopia</a>, 2017 & 2018</li>
+        </ul>
+    </section>
+
+    <!-- Add this section before the Contact section -->
+    <section id="awards">
+        <h2>Awards & Honors</h2>
+        <ul class="awards-list">
+            <li class="award-item">
+                <span class="award-name">Lee-Stanziale Ohana Fellowship</span>
+                <span class="award-details">Selected by Department of Electrical and Computer Engineering</span>
+                <span class="award-year">2025</span>
+            </li>
+            <li class="award-item">
+                <span class="award-name">Carnegie Institute of Technology Dean's Fellowship</span>
+                <span class="award-details">Awarded to Admitted PhD Students</span>
+                <span class="award-year">2022</span>
+            </li>
+            <li class="award-item">
+                <span class="award-name">MasterCard Foundation Scholarship</span>
+                <span class="award-details">Selected among top 25% of applicants</span>
+                <span class="award-year">2020</span>
+            </li>
+            <li class="award-item">
+                <span class="award-name">Academic Excellence Gold Medal</span>
+                <span class="award-details">First Among 5,600 Engineering Graduates</span>
+                <span class="award-year">2019</span>
+            </li>
+            <li class="award-item">
+                <span class="award-name">POSCO TJ Park Foundation Africa Fellowship</span>
+                <span class="award-details">Awarded to Outstanding Engineering Students</span>
+                <span class="award-year">2017-2019</span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <address>
+            Email: <a href="mailto:dshenkut@andrew.cmu.edu">dshenkut@andrew.cmu.edu</a><br>
+            5000 Forbes Ave, Pittsburgh, PA 15213. Porter Hall, A21.<br>
+        </address>
+    </section>
+    <!-- Fun Fact Section -->
+    <section id="blueNileHub">
+        <h2>News</h2>
+        <!-- <p>
+            Welcome to Harambe's ML Chronicles, where I write about the hope and glimpse of Machine Learning in Africa. 
+            Here, I regularly write about latest news, resources, and opportunities within the African ML sphere.
+        </p> -->
+        <p>Discover useful <b>datasets</b>, awesome <b>projects</b> and <b>startups</b> news 
+            predominantly focused on ML sphere in Africa.</p>
+
+        <div class="mlogContent">
+            <ul class="newsList">
+                <li>
+                    <a href="https://sites.research.google/open-buildings/">Google's Open Buildings
+                         Dataset v3 Released for Africa</a> - March 2024
+                    <span class="news-tag">Dataset</span>
+                </li>
+                <li>
+                    <a href="https://deeplearningindaba.com/2024">Deep Learning Indaba 2024 Announced
+
+                    </a> - Tunisia
+                    <span class="news-tag">Conference</span>
+                </li>
+                <!-- <li>
+                    <a href="https://zindi.africa/competitions">Zindi Africa Launches New Healthcare
+                         ML Competition</a> - February 2024
+                    <span class="news-tag">Competition</span>
+                </li>
+                <li>
+                    <a href="https://www.masakhane.io">Masakhane NLP: Advancing African Language 
+                        Processing</a> - January 2024
+                    <span class="news-tag">Project</span>
+                </li>
+                <li>
+                    <a href="https://www.carnegie.org/news/articles/artificial-intelligence-africa/">
+                        Carnegie Corporation Funds AI Research Centers in Africa</a> - 
+                        December 2023
+                    <span class="news-tag">Funding</span>
+                </li> -->
+            </ul>
+
+            <!-- African ML Resources Section -->
+            <div class="afroResources">
+                <div class="resource-section">
+                    <h3>🗃️ African Datasets</h3>
+                    <ul>
+                        <li><a href="https://sites.research.google/open-buildings/">Google Open Buildings 
+                            Africa</a></li>
+                        <li><a href="https://zindi.africa/datasets">Zindi Africa Datasets</a></li>
+                        <li><a href="https://www.masakhane.io/data">African Languages Dataset</a></li>
+                    </ul>
+                </div>
+
+                <div class="resource-section">
+                    <h3>💡 Notable Projects</h3>
+                    <ul>
+                        <li><a href="https://www.masakhane.io">Masakhane NLP</a></li>
+                        <li><a href="https://www.deeplearningindaba.com">Deep Learning Indaba</a></li>
+                        <li><a href="https://www.africanmastersinml.org">African Masters in ML</a></li>
+                    </ul>
+                </div>
+
+                <div class="resource-section">
+                    <h3>🚀 African ML Startups</h3>
+                    <ul>
+                        <li><a href="https://www.instadeep.com">InstaDeep (Tunisia/UK)</a></li>
+                        <li><a href="https://www.zindi.africa">Zindi Africa (Pan-African)</a></li>
+                        <li><a href="https://www.retro.ai">Retro AI (Ethiopia)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <!-- <blockquote class="animated-quote">"The unity of Africa reflects the most noble of aims. It must be pursued by all who are convinced of its necessity" Fulbert Youlou</blockquote> -->
+        <p>© 2023 by Dereje Shenkut. All rights reserved.</p>
+    </footer>
+
+    <!-- Add JavaScript for expandable abstracts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const abstractButtons = document.querySelectorAll('.abstract-btn');
+            
+            abstractButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Find the closest publication card
+                    const pubDetails = this.closest('.pub-details');
+                    
+                    // Find the abstract container within this publication card
+                    const abstractContainer = pubDetails.querySelector('.pub-abstract-container');
+                    
+                    // Toggle visibility
+                    if (abstractContainer.style.display === 'block') {
+                        abstractContainer.style.display = 'none';
+                    } else {
+                        abstractContainer.style.display = 'block';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

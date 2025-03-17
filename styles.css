@@ -1,0 +1,857 @@
+html, body {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+
+header {
+    /*background-color: linear-gradient(to bottom, #078930, #fcd116, #de071c); /* Colors of the Ethiopian flag */
+    animation: flagColors 50s infinite;
+    padding: 1em 0;
+    text-align: center;
+    position: relative; /* Add this to help with positioning */
+    min-height: 180px; /* Adjust this value based on your needs */
+    display: flex;
+    flex-direction: column;
+}
+/* @keyframes flagColors {
+
+} */
+header h1, header h2, nav ul li a {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+footer p, footer blockquote {
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+header h1 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: 'Georgia', serif;
+    letter-spacing: 1.5px;
+}
+
+
+header h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 5px groove rgba(210, 179, 179, 0.3); /* Subtle line under PhD Student */
+    width: 100%; /* Line won't stretch full width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    margin-top: auto; /* This pushes the nav to the bottom of header */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-right: 2em;
+    margin-bottom: 1em; /* Add some space at the bottom */
+    gap: 1.5rem;  /* Use gap instead of margin for more consistent spacing */
+    flex-wrap: wrap;  /* Allow wrapping on smaller screens */
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #08b9b0;
+}
+
+nav ul li {
+    margin: 0;  /* Remove individual margins */
+}
+
+section {
+    padding: 2em;  /* Reduced from 3em */
+    font-size: 1.1em;
+    border-bottom: 1px solid #333333;
+    background-color: #000000;
+    color: #ffffff;
+    max-width: 800px;  /* Added max-width to condense content */
+    margin: 0 auto;  /* Center the sections */
+}
+
+.profile-pic {
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    /*background: linear-gradient(to right, #B31B1B, #bbadad); /* CMU red to grey gradient */
+    animation: flagColors 30s infinite;
+    font-weight: bold; /* Bold text */
+    color: #ffffff;
+    padding: 1em 0;
+    text-align: center;
+}
+@keyframes flagColors {
+    0%, 10% {
+        background: linear-gradient(to bottom, rgba(7, 137, 48, 0.1), rgba(252, 209, 22, 0.1), rgba(222, 7, 28, 0.1));
+    }
+    10.1%, 15% {
+        background: linear-gradient(to right, rgba(0, 135, 81, 0.1), rgba(255, 255, 255, 0.1), rgba(0, 135, 81, 0.1));
+    }
+    15.1%, 20% {
+        background: linear-gradient(45deg, rgba(0, 51, 161, 0.1), rgba(213, 43, 45, 0.1), rgba(213, 43, 45, 0.1), rgba(18, 184, 214, 0.1));
+    }
+    20.1%, 25% {
+        background: linear-gradient(to bottom, rgba(32, 107, 196, 0.2), rgba(250, 218, 94, 0.2), rgba(73, 140, 44, 0.2)); /* Rwanda */
+    }
+    25.1%, 30% {
+        background: linear-gradient(to bottom, rgba(0, 171, 102, 0.2), rgba(255, 255, 255, 0.2), rgba(206, 17, 38, 0.2)); /* Madagascar */
+    }
+    30.1%, 35% {
+        background: linear-gradient(to right, rgba(0, 158, 73, 0.2), rgba(255, 206, 0, 0.2), rgba(210, 16, 52, 0.2)); /* Guinea */
+    }
+    35.1%, 40% {
+        background: linear-gradient(to bottom, rgba(0, 114, 198, 0.2), rgba(255, 255, 255, 0.2), rgba(206, 17, 38, 0.2)); /* Cape Verde */
+    }
+    40.1%, 45% {
+        background: linear-gradient(to bottom, rgba(58, 117, 196, 0.2), rgba(255, 236, 0, 0.2), rgba(206, 17, 38, 0.2)); /* Democratic Republic of Congo */
+    }
+    45.1%, 50% {
+        background: linear-gradient(to bottom, rgba(206, 17, 38, 0.2), rgba(255, 255, 255, 0.2), rgba(0, 114, 41, 0.2)); /* Seychelles */
+    }
+    50.1%, 55% {
+        background: linear-gradient(to right, rgba(0, 149, 67, 0.2), rgba(254, 209, 0, 0.2), rgba(0, 174, 239, 0.2), rgba(224, 25, 49, 0.2)); /* Central African Republic */
+    }
+    /* ... continue for other countries with the same pattern ... */
+    95.1%, 100% {
+        background: linear-gradient(to bottom, rgba(7, 137, 48, 0.2), rgba(252, 209, 22, 0.2), rgba(222, 7, 28, 0.2)); /* Ethiopia */
+    }
+}
+/* To improve text visibility against the background colors, you can add a text shadow: */
+footer p {
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+#publications li {
+    margin-bottom: 80px; /* Adjust this value as needed */
+}
+.publication-content3 {
+    margin-bottom: 80px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.publication-content2 {
+    margin-bottom: 80px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+figure {
+    flex: 0 0 50%; /* Allocate 50% of the container width to the image */
+    max-width: 50%;
+}
+/* figure2 {
+    flex: 0 0 50%; /* Allocate 50% of the container width to the image */
+    /* max-width: 50%; */
+/* } */ 
+.abstract3 {
+    flex: 1; /* Allocate the remaining space to the abstract */
+    padding: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); */
+}
+.abstract2 {
+    flex: 1; /* Allocate the remaining space to the abstract */
+    padding: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.high-res {
+    width: 75%;  /* Reduced from 90% */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.gan-res {
+    width: 75%;  /* Reduced from 90% */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ... rest of your CSS ... */
+
+.social-links {
+    margin-top: 15px;  /* Back to original margin */
+    display: flex;
+    justify-content: center;
+    gap: 15px;  /* Back to original gap */
+}
+
+.social-links .hf-icon {
+    font-size: 1.0em; /* Adjust size to match other icons */
+    line-height: 0.8;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.social-links a {
+    color: #08b9b0;
+    text-decoration: none;
+    font-size: 1.5em;  /* Back to original size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links a:hover {
+    color: #069089; /* Darker shade on hover */
+    transform: scale(1.1); /* Slight grow effect on hover */
+    transition: all 0.2s ease;
+}
+
+.emphasizeL {
+    color: #007BFF;  /* Change this to any color you prefer */
+    font-weight: bold;
+    font-size: 1.2em;  /* Making it slightly bigger than surrounding text */
+    text-decoration: underline;  /* Underlining it for emphasis */
+}
+
+/* ... rest of your CSS ... */
+
+/* #harambeMLog {
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+#harambeMLog h2 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;  /* Assuming this is the color you've used for other section headers */
+/* } */
+
+/* #harambeMLog p {
+    font-size: 16px;
+    color: #555;  /* Assuming this is the color you've used for other section content */
+    /* line-height: 1.5; */
+/* } */ 
+
+.emphasizeML {
+    color: #007BFF;  /* A standout color for the emphasized 'L' */
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+.newsList {
+    list-style-type: none;  /* Removes bullet points */
+    padding-left: 0;  /* Aligns the list to the left */
+}
+
+.newsList li {
+    margin-bottom: 10px;  /* Space between list items */
+}
+
+.newsList a {
+    color: #007BFF;  /* Link color; you can adjust this */
+    text-decoration: none;  /* Removes the underline from links */
+}
+
+.newsList a:hover {
+    text-decoration: underline;  /* Underlines link on hover for better UX */
+}
+.mlogContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px; /* Increased gap between news list and icons */
+}
+
+.newsList {
+    flex: 2; /* Takes up more space */
+    background-color: rgba(255, 255, 255, 0.03);  /* Reduced from 0.05 */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.newsList li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.01);  /* Reduced from 0.02 */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.newsList li:hover {
+    background-color: rgba(255, 255, 255, 0.03);  /* Reduced from 0.05 */
+}
+
+.afroIcons {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-self: flex-start;
+    max-width: 150px; /* Add this to constrain overall width */
+}
+
+.iconItem {
+    width: 100%; /* Change from 200px to 100% */
+    padding: 10px; /* Reduce padding from 15px */
+    border-radius: 8px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    text-align: center; /* Center the content */
+}
+
+.iconItem img {
+    width: 40px; /* Add this to control icon image size */
+    height: 40px; /* Add this to control icon image size */
+    margin-bottom: 5px; /* Add some space between icon and text */
+}
+
+.iconItem p {
+    margin: 0; /* Remove default paragraph margins */
+    font-size: 0.9em; /* Make text slightly smaller */
+}
+
+.iconItem:hover {
+    transform: translateX(-5px); /* Slight shift on hover */
+    opacity: 1;
+}
+
+.iconItem.afroDataset {
+    background-color: rgba(108, 173, 108, 0.2); /* More subtle colors */
+}
+
+.iconItem.afroMLProjects {
+    background-color: rgba(191, 191, 163, 0.2);
+}
+
+.iconItem.afroMLStartups {
+    background-color: rgba(177, 128, 128, 0.2);
+}
+
+.s1 {
+    background-color: #000000;
+    padding: 50px 0;
+}
+
+.main-container {
+    background-color: #000000;
+    width: 100%;
+    max-width: 800px;  /* Reduced from 1000px */
+    margin: 0 auto;
+}
+
+.intro-wrapper {
+    display: flex;
+    flex-direction: row-reverse; /* This will switch the order */
+    gap: 30px;
+    align-items: flex-start;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.left-column {
+    padding: 20px;  /* Back to original padding */
+    text-align: center;
+    flex-shrink: 0;
+}
+
+#preview {
+    flex: 1;
+    padding: 20px;
+    padding-right: 30px; /* Add some padding on the right */
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Adjust profile pic margins */
+#profile-pic {
+    width: 150px;  /* Back to original size */
+    height: 150px;  /* Back to original size */
+    border-radius: 50%;
+    background-color: #000;
+    object-fit: cover;
+    margin-bottom: 15px;  /* Back to original margin */
+}
+
+.s2 {
+    background-color: #000000;
+}
+
+.ethiopia-flag {
+    font-family: 'Noto Color Emoji', Apple Color Emoji, Segoe UI Emoji, sans-serif;
+    font-size: 0.9em;
+    line-height: 0.6;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Add these new styles for publications */
+.publications-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    max-width: 800px;  /* Added max-width */
+    margin: 0 auto;  /* Center the grid */
+}
+
+.publication-card {
+    background: rgba(255, 255, 255, 0.03);  /* Reduced from 0.05 */
+    border-radius: 12px;
+    padding: 1.2rem;  /* Slightly reduced padding */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1.5rem;  /* Add space between cards */
+}
+
+.publication-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.publication-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.pub-year {
+    font-size: 1rem;
+    color: #FFD700;  /* Changed from #08b9b0 to golden */
+    font-weight: bold;  /* Added bold */
+}
+
+.pub-status, .pub-venue {
+    background: rgba(255, 215, 0, 0.1);  /* Changed background to match golden */
+    color: #FFD700;  /* Changed from #08b9b0 to golden */
+    padding: 0.2rem 0.6rem;
+    border-radius: 16px;
+    font-size: 0.85rem;
+    font-weight: bold;  /* Added bold */
+}
+
+.publication-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: normal;
+}
+
+.publication-content {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;  /* Changed to side by side layout with text taking more space */
+    gap: 1.5rem;
+    align-items: start;
+    max-width: 800px;  /* Increased from 700px to accommodate side by side */
+    margin: 0 auto;
+}
+
+.pub-media {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 300px;  /* Limit maximum width of media container */
+}
+
+.pub-image {
+    width: 100%;  /* Changed from 85% to fill container */
+    max-width: 300px;  /* Limit maximum width of images */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.media-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.pub-media:hover .media-overlay {
+    opacity: 1;
+}
+
+.media-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+}
+
+.media-link:hover {
+    background: white;
+    color: black;
+}
+
+.pub-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;  /* Reduced gap */
+}
+
+.pub-abstract {
+    font-size: 0.9rem;  /* Slightly smaller font */
+    line-height: 1.5;
+    margin: 0;
+    padding: 0.8rem;  /* Reduced padding */
+    background: rgba(255, 255, 255, 0.02);  /* Reduced from 0.03 */
+}
+
+.pub-links {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pub-button {
+    padding: 0;
+    font-size: 0.9rem;
+    background: none;  /* Remove background */
+    border: none;
+    color: #FFD700 !important;  /* Golden color */
+    text-decoration: underline;  /* Add underline */
+    font-weight: bold;  /* Make text bold */
+    transition: color 0.3s ease;
+}
+
+/* Add slashes between buttons */
+.pub-button:not(:last-child)::after {
+    content: "/";
+    color: #FFD700;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: normal;  /* Make the slash not bold */
+}
+
+.pub-button:hover {
+    color: #DAA520 !important;  /* Darker golden on hover */
+    text-decoration: underline !important;
+    background: none;  /* Ensure no background on hover */
+}
+
+/* Remove previous small-button styles */
+.small-button {
+    font-size: 0.9rem;  /* Keep consistent size */
+    padding: 0;
+    margin: 0;
+}
+
+/* Adjust responsive design for smaller screens */
+@media (max-width: 768px) {
+    .publication-content {
+        grid-template-columns: 1fr;  /* Stack on mobile */
+    }
+    
+    .pub-media {
+        max-width: 250px;  /* Slightly smaller on mobile */
+        margin: 0 auto;  /* Center on mobile */
+    }
+    
+    .pub-image {
+        max-width: 250px;  /* Match container width */
+    }
+}
+
+/* Add these styles for the MLlog section */
+.mlogContent {
+    margin-top: 2rem;
+}
+
+.newsList {
+    list-style: none;
+    padding: 0;
+}
+
+.newsList li {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);  /* Reduced from 0.05 */
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.newsList li:hover {
+    transform: translateX(10px);
+}
+
+.news-tag {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    background: #FFD700;  /* Changed from #08b9b0 */
+    color: black;
+    margin-left: 1rem;
+}
+
+.afroResources {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    gap: 1rem;  /* Reduced gap */
+}
+
+.resource-section {
+    background: rgba(255, 255, 255, 0.03);  /* Reduced from 0.05 */
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.resource-section h3 {
+    color: #FFD700;  /* Changed from #08b9b0 */
+    margin-bottom: 1rem;
+}
+
+.resource-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resource-section li {
+    margin-bottom: 0.8rem;
+}
+
+.resource-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.resource-section a:hover {
+    color: #08b9b0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .afroResources {
+        grid-template-columns: 1fr;
+    }
+}
+
+.awards-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.award-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);  /* Reduced from 0.05 */
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.award-item:hover {
+    transform: translateX(10px);
+    background: rgba(255, 255, 255, 0.05);  /* Reduced from 0.08 */
+}
+
+.award-name {
+    flex: 1;
+    font-weight: bold;
+    color: #FFD700;  /* Changed from #08b9b0 */
+}
+
+.award-year {
+    margin-left: 1rem;
+    color: #cccccc;
+    font-style: italic;
+}
+
+#preview a {
+    color: #08b9b0;
+    text-decoration: none;
+}
+
+#preview a:hover {
+    text-decoration: underline;
+}
+
+section a {
+    color: #08b9b0;
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+#about a {
+    color: #08b9b0;
+    text-decoration: none;
+}
+
+#about a:hover {
+    text-decoration: underline;
+}
+
+/* Global link styles to ensure consistency */
+a {
+    color: #FFD700 !important;  /* Golden color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.pub-year, .pub-status, .pub-venue {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+#teaching ul {
+    list-style-type: disc;
+    padding-left: 2em;
+    line-height: 1.6;
+}
+
+#teaching li {
+    margin-bottom: 0.8em;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+
+#teaching a {
+    color: #08b9b0;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+#teaching a:hover {
+    text-decoration: underline;
+}
+
+/* Expandable abstract styles */
+.pub-abstract-container {
+    margin-bottom: 1rem;
+    display: none; /* Hide abstract container by default */
+}
+
+.pub-abstract {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #cccccc;
+    background: rgba(255, 255, 255, 0.02);  /* Reduced from 0.03 */
+    padding: 1rem;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    border-left: 3px solid #08b9b0;
+}
+
+/* Make the buttons follow the requested order */
+.pub-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Ensure consistent spacing in publication cards */
+.publication-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pub-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .pub-button {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Make sure GIFs don't exceed container size */
+img[src$=".gif"] {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Ensure images in figures are properly sized */
+figure img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.pub-brief-description {
+    font-size: 0.85rem;  /* Even smaller than before */
+    color: #fbf8f8;
+    font-style: italic;
+    margin-top: 0.8rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);  /* Very subtle separator */
+    line-height: 1.4;
+    font-weight: 300;  /* Light weight text */
+    opacity: 0.8;  /* Slightly faded appearance */
+}
+
+/* Adjust spacing when description follows links */
+.pub-links + .pub-brief-description {
+    margin-top: 0.6rem;
+    padding-top: 0.6rem;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .intro-wrapper {
+        flex-direction: column; /* Stack on mobile */
+        align-items: center;
+    }
+    
+    #preview {
+        padding-right: 20px;
+        text-align: center;
+    }
+}
