@@ -493,7 +493,7 @@ figure {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.325);
+    background: rgba(255, 255, 255, 0.0325);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -531,7 +531,7 @@ figure {
     line-height: 1.5;
     margin: 0;
     padding: 0.8rem;  /* Reduced padding */
-    background: rgba(255, 255, 255, 0.325);  /* Reduced from 0.03 */
+    background: rgba(255, 255, 255, 0.0325);  /* Reduced from 0.03 */
 }
 
 .pub-links {
@@ -633,7 +633,7 @@ figure {
 }
 
 .resource-section {
-    background: rgba(255, 255, 255, 0.325);  /* Reduced from 0.05 */
+    background: rgba(255, 255, 255, 0.0325);  /* Reduced from 0.05 */
     padding: 1.5rem;
     border-radius: 12px;
 }
@@ -680,14 +680,14 @@ figure {
     align-items: baseline;
     margin-bottom: 1.5rem;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.325);  /* Reduced from 0.05 */
+    background: rgba(255, 255, 255, 0.0325);  /* Reduced from 0.05 */
     border-radius: 8px;
     transition: transform 0.2s ease;
 }
 
 .award-item:hover {
     transform: translateX(10px);
-    background: rgba(255, 255, 255, 0.325);  /* Reduced from 0.08 */
+    background: rgba(255, 255, 255, 0.0325);  /* Reduced from 0.08 */
 }
 
 .award-name {
@@ -832,7 +832,7 @@ figure img {
     font-style: italic;
     margin-top: 0.8rem;
     padding-top: 0.8rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.325);  /* Very subtle separator */
+    border-top: 1px solid rgba(255, 255, 255, 0.0325);  /* Very subtle separator */
     line-height: 1.4;
     font-weight: 300;  /* Light weight text */
     opacity: 0.8;  /* Slightly faded appearance */
